@@ -21,10 +21,12 @@ try
     int sum = StatisticsHelper.CalculateSum(values);
     double average = StatisticsHelper.CalculateAverage(values);
     int max = StatisticsHelper.CalculateMax(values);
+    int min = StatisticsHelper.CalculateMin(values);
 
     Console.WriteLine($"Sum = {sum}");
     Console.WriteLine($"Average = {average}");
     Console.WriteLine($"Max = {max}");
+    Console.WriteLine($"Min = {min}");
 }
 catch
 {
