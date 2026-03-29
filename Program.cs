@@ -19,8 +19,10 @@ try
         .ToArray();
 
     int sum = StatisticsHelper.CalculateSum(values);
+    double average = StatisticsHelper.CalculateAverage(values);
 
     Console.WriteLine($"Sum = {sum}");
+    Console.WriteLine($"Average = {average}");
 }
 catch
 {
