@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using apbd_cw1_git_s29640;
 
-Console.WriteLine("Enter numbers separated by spaces:");
+Console.WriteLine("Enter integer values separated by spaces:");
 
 string? input = Console.ReadLine();
 
