@@ -10,3 +10,4 @@ Simple .NET console application.
 Features:
 - sum calculation
 - average calculation
+- maximum calculation
