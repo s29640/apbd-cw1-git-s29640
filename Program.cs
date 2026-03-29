@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using apbd_cw1_git_s29640;
+
 Console.WriteLine("Enter numbers separated by spaces:");
 
 string? input = Console.ReadLine();
@@ -9,4 +11,18 @@ if (string.IsNullOrWhiteSpace(input))
     return;
 }
 
-Console.WriteLine($"You entered: {input}");
+try
+{
+    int[] values = input
+        .Split(' ', StringSplitOptions.RemoveEmptyEntries)
+        .Select(int.Parse)
+        .ToArray();
+
+    int sum = StatisticsHelper.CalculateSum(values);
+
+    Console.WriteLine($"Sum = {sum}");
+}
+catch
+{
+    Console.WriteLine("Error: please enter valid integers.");
+}
